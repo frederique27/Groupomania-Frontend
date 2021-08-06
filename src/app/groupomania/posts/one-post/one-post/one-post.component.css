@@ -97,8 +97,8 @@ hr {
   color: green !important;
 }
 
-.onDislike {
-  color: red !important;
+.onNoLike {
+  color: black !important;
 }
 
 .comments {
@@ -109,4 +109,16 @@ input:focus,
 div:focus,
 a:focus {
   outline: 1px dotted black;
+}
+
+#hide{
+  display: none;
+}
+
+.onshow{
+  display: flex!important;
+}
+
+#commentTop{
+  justify-content: space-between;
 }

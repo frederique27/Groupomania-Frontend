@@ -15,7 +15,7 @@
           "options": {
             "allowedCommonJsDependencies": [
               "lodash"
-           ],
+            ],
             "outputPath": "dist/Frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -38,7 +38,7 @@
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/tinymce/tinymce.min.js",
               "node_modules/tinymce/themes/silver/theme.js"
-            ] 
+            ]
           },
           "configurations": {
             "production": {
@@ -131,6 +131,10 @@
               "devServerTarget": "Frontend:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }

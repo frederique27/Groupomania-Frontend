@@ -12,14 +12,14 @@ export class AuthService {
 	isAuth$ = new BehaviorSubject<boolean>(false);
 	private authToken: string;
 	private userId: string;
-	private name: string;
+	// private name: string;
 	private isAdmin: boolean;
-	success: boolean
+	// success: boolean
 	private loggedInStatus = JSON.parse(localStorage.getItem('loggedIn') || 'false')
 
 
-	constructor(private http: HttpClient,
-		private testHttp: TestHttp,
+	constructor(
+		private http: HttpClient,
 		private router: Router) {
 	}
 
